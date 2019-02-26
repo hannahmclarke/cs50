@@ -13,7 +13,7 @@ int main(void)
     for (int r = 0; r < h; r++)
     {
         //print spaces  
-        for (s = 0; s < h - r - 1; s++)
+        for (int s = 0; s < h - r - 1; s++)
              printf(" ");
         //print hashes    
         for (int n = 0; n < r + 1; n++)
