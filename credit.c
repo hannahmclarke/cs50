@@ -31,30 +31,30 @@ int main(void)
                 + ((cardno % 10000000000000) / 1000000000000)
                 + ((cardno % 1000000000000000) / 100000000000000));
     // Check validity of card number
-    if (checksum % 10 > 0)
+    if (checksum % 10 != 0)
     {
         printf("INVALID\n");
     }
     // Determine type of card
     else if (cardno > 339999999999999 && cardno < 350000000000000)    
     {
-        printf("Amex\n");
+        printf("AMEX\n");
     }
     else if (cardno > 369999999999999 && cardno < 380000000000000)
     {
-        printf("Amex\n");
+        printf("AMEX\n");
     }
-    else if (cardno > 5099999999999999 && cardno < 5800000000000000)
+    else if (cardno > 5099999999999999 && cardno < 5600000000000000)
     {
-        printf("Mastercard\n");
+        printf("MASTERCARD\n");
     }
     else if (cardno > 3999999999999 && cardno < 5000000000000) 
     {
-        printf("Visa\n");
+        printf("VISA\n");
     }
     else if (cardno > 3999999999999999 && cardno < 5000000000000000)
     {
-        printf("Visa\n");
+        printf("VISA\n");
     }
     else 
     {
